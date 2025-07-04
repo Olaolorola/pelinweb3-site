@@ -1,46 +1,86 @@
-/* 🌌 Orbital Nexus Theme – PelinWeb3 x Qudo */
+/* ======== Cosmic Upgrade Starts Here ======== */
 
+/* Page Background */
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Orbitron', sans-serif;
-  background: linear-gradient(to bottom, #0D0D2B, #050514);
-  color: #FFFFFF;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(160deg, #0D0D2B, #000010);
+  color: #ffffff;
+  overflow-x: hidden;
 }
 
-header {
+/* Section Layouts */
+header, section, footer {
   text-align: center;
   padding: 60px 20px;
-  background: radial-gradient(circle at center, #7F00FF33, transparent);
-  border-bottom: 2px solid #00FFC6;
-  box-shadow: 0 0 20px #00FFC6AA;
 }
 
 h1 {
-  font-size: 3rem;
-  color: #FF6A00;
+  font-size: 3em;
+  color: #00FFC6;
   margin-bottom: 10px;
-  text-shadow: 0 0 10px #FF6A00AA;
 }
 
 p {
-  font-size: 1.2rem;
-  color: #00FFC6;
-  text-shadow: 0 0 5px #00FFC688;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  max-width: 800px;
+  margin: 0 auto 30px;
 }
 
-footer {
-  margin-top: auto;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #888;
-  border-top: 1px solid #222;
+/* Glowing Quote */
+header p {
+  color: #7F00FF;
+  font-weight: bold;
+  text-shadow: 0 0 12px #7F00FF;
+}
+
+/* Rocket */
+header img {
+  width: 120px;
+  animation: float 3s ease-in-out infinite;
+  margin-top: 40px;
+}
+
+/* Rocket Animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* Section Alternates */
+section:nth-child(even) {
   background-color: #0D0D2B;
-  width: 100%;
-  text-align: center;
+}
+section:nth-child(odd) {
+  background-color: #111133;
+}
+
+/* Orbit/Constellation Accent (if added later) */
+.orbit-line {
+  border: 1px dashed #00FFC6;
+  border-radius: 50%;
+  opacity: 0.2;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  padding: 30px;
+  color: #888;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
 }
