@@ -1,0 +1,46 @@
+/* 🌌 Orbital Nexus Theme – PelinWeb3 x Qudo */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(to bottom, #0D0D2B, #050514);
+  color: #FFFFFF;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: radial-gradient(circle at center, #7F00FF33, transparent);
+  border-bottom: 2px solid #00FFC6;
+  box-shadow: 0 0 20px #00FFC6AA;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #FF6A00;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #FF6A00AA;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #00FFC6;
+  text-shadow: 0 0 5px #00FFC688;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #222;
+  background-color: #0D0D2B;
+  width: 100%;
+  text-align: center;
+}
